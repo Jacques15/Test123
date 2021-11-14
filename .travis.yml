@@ -14,4 +14,4 @@ install:
 # command to run tests
 script:
   - pytest
-  - Website_python.py
+  - python3 Website_python.py
