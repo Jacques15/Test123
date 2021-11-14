@@ -10,7 +10,7 @@ python:
 install:
   - pip install -U pytest
   - pip install -U flask
-  - pip install -U azure
+  - pip install -U azure-cognitiveservices-search-customsearch
 # command to run tests
 script:
   - pytest
