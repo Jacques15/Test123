@@ -3,7 +3,7 @@ import sys
 import os
 
 
-from Website_python import remove_punctuation
+from remove_punctuation import remove_punctuation
 
 class TestClass:
     def test_one(self):
