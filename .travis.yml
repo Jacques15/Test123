@@ -15,6 +15,7 @@ install:
   - nvm install 10
 # command to run tests
 script:
+  - sonar-scanner
   - pytest
   - python3 Website_python.py
-  - sonar-scanner
+  
