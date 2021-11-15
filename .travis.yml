@@ -1,5 +1,5 @@
 dist: xenial
-language: node_js
+language: python
 node_js:
   - "10"
 # command to install dependencies
