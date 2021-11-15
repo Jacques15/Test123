@@ -7,9 +7,7 @@ python:
 addons:
   sonarcloud:
     organization: "jacques15" # the key of the org you chose at step #3
-    token:
-      secure: "AUPH+fYYxzJZDFZw3dlJKTOQ4teMiOuGclUl6jRclYaT9N+cUX1BfcN0usXiu3iV74nCQVYn+i6MrPYtF+zzdRIDfUJxSKDKHey4jgimuyPl7R2f2lpnk7VGu4J9hPyUzgMKOUXdnkXQAhNd4eYHZC8Bx1/xlA0TdonvhBshWm9GQIxGdLan7j+pFOheo9TwQETp5OcsG/0ZX9aq1yu2qtYXlaNyYVdPo6QPVQXUsTS4JtigSoj7wMxbJ6g09oyqf6p4IOOS3MSnYGrNLQ9RXLJfiHbCiC4ZjHHzgTeX1ZfdlolM4SfYKSXz4IThPEEc0C1wmv1lrsbbpJ3aPN2ELueuvKCRcABlxnN6YmKk313zwR0bh3Bczlo60XqQt5gqzAcZhioFM++x/qaH3DF3XpbtNDLjOkZrpfTiv641xtkng/vfUux273jeHxHOl4UQzScA9VTGSPPw5vSEtuX0CF+PsSo/Yx9hBbEDirxNXaTtOghAeJ799OfMI9wMp9r7ogBFwQXljiz2rh6MrpOW7HlQS9zrWQbBZk4HPqJu5L3utGZ5gIRM+WrI0qmhaBRHCmEjVV/bReXLXDpAb1ZQBHct51dejkqDUok7VuKUyZQXg2AE1cBUrguMSQ13e2qeVie3atCBVRnc/OxITnM59fGDLZsD3IlP96MEkhRqqfM="
-
+    
 install:
   - pip install -U pytest
   - pip install -U flask
