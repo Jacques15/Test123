@@ -3,6 +3,13 @@ language: python
 python:
   - "3.9"
 # command to install dependencies
+
+addons:
+  sonarcloud:
+    organization: jacques15 # the key of the org you chose at step #3
+    token:
+      secure: rO/5ZJWpLLJ4+4G70IU0ddtg2IMocxcB+ia182BG3P00JKexZzod6/MmEiSSLVshdDc1Za3X0Rpbn9JpO/sD15iwBzVHx2zzm/UEaYGxm8xH1GYrwhFpXecC3hG/7n1mptQzC4bu2etxT2lZ/j378VJh7oyf1mKogcYxjCFL7xHQflpFZOu0649n4z5IQ9L0O12u58oEhKMQkDrEzb3RatMhhpvXf4OsaWVkn+Tq2JTewx6B0HPj1XfJS/pYwsTky6ptG7Oy5L88pq6puznXVyZUfbwbqg8rlgZcPN0AftmGCpQXpIQ/mFQD1dqpSSPhpWfmnhhT6GK7b/OXdnTEEaFW//0vdXbkkFq2CM2L/qj++lZ0OBAmfh92JMczca3B4AnxEeKo+RkXU6mtstwopqi5bMGEf6YghvUBjOv+m9Ix//ZDiHYvHkOGC0XMOlc64TvUUCFlVcPyQDSi2+xaVPDymiu9CB02kzTE1qVH4XYNJeX7XNv7Cgf0Vbf+3tnmLsm9P2HD2GQl19W/zUEqHbPJ0z+ttvOI0wiS/z5Cgb/m1lKcI96Ot0AQqrWQbovgqctZ2Fb/3bxvQITHGx6iGL3SThlHnrHoNUJEEm9E01I+k4zQxNfrc9s9j4ZFinRndsu46MfBArP8PnREwdTKm1DD8fIXn046znI/1Ady7a0= # encrypted value of your token
+
 install:
   - pip install -U pytest
   - pip install -U flask
@@ -11,3 +18,4 @@ install:
 script:
   - pytest
   - python3 Website_python.py
+  - sonar-scanner
